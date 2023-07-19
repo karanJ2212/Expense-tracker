@@ -17,7 +17,7 @@
   </div>
   <div class="amount">
     <p>$<%= category.entities.sum(:amount)%></p>
-
+    
     <% if can? :destroy, category %>
       <%= button_to user_category_path(current_user, category),
         method: :delete,
@@ -26,6 +26,6 @@
         <i class="fa-solid fa-trash"></i>
       <% end %>
     <% end %>
-
+    
   </div>
 </li>
