@@ -67,11 +67,12 @@ gem 'sassc-rails'
 gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-group :test do
+group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 gem 'cancancan'
-gem 'font-awesome-sass', '~> 6.4.0'
+gem 'font-awesome-sass', '~> 5.15'
