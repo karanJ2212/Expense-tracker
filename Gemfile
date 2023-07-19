@@ -74,7 +74,4 @@ group :test do
   gem 'webdrivers'
 end
 gem 'font-awesome-sass', '~> 6.4.0'
-
-
-
 gem 'cancancan'
