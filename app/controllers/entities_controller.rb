@@ -1,4 +1,4 @@
-lass EntitiesController < ApplicationController
+class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
 
   # GET /entities or /entities.json
