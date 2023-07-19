@@ -4,7 +4,7 @@
     <div class="login-header header">
       <div>
         <%= link_to raw('<i class="fa-solid fa-arrow-left-long"></i>'), unauthenticated_root_path %>
-
+        
       </div>
       <p>REGISTER</p>
       <div class="action">
@@ -20,10 +20,13 @@
     </div>
       <%= f.label :name %>
       <%= f.text_field :name, autofocus: true,  placeholder: "Full name", required: true  %>
+
       <%= f.label :email %>
       <%= f.email_field :email,  autocomplete: "email", placeholder: "Email", required: true  %>
+
       <%= f.label :password %>
       <%= f.password_field :password, placeholder: "Password", minlength: 6, required: true %>
+
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, placeholder: "Confirm password", required: true %>
     </div>

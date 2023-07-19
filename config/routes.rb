@@ -13,8 +13,8 @@ Rails.application.routes.draw do
       root "homepage#index", as: :unauthenticated_root
     end
   end
-  resources :users, only: %i[index show new] do
-    resources :categories, only: %i[new create show index destroy]
-    resources :entities, only: %i[new create index show destroy]
+  resources :users, only: [:index, :show, :new] do
+    resources :categories, only: [:new, :create, :show, :index, :destroy]
+    resources :entities, only: [:new, :create, :index, :show, :destroy]
   end
 end
