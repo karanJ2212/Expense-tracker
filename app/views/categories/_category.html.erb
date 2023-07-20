@@ -23,7 +23,8 @@
     method: :delete,
     data: { confirm: 'Are you sure you want to delete this category?' },
     title: "Delete #{category.name.capitalize} category" do %>
-    <img src="/assets/trashcan.png" alt="Delete" class="trashcan-icon">
+   
+    <%= image_tag('trashcan.png') %>
   <% end %>
 <% end %>
 
