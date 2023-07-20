@@ -42,7 +42,7 @@ Expense Tracker is a user-friendly web-based budgeting application built on the 
 
 ### 🚀 Live Demo <a name="live-demo"></a>
 
-<a href="" target="_blank">SpendSmart</a>
+<a href="https://expensetracking.onrender.com" target="_blank">ExpenseTracker</a>
 
 ### 📽️ Video Presentation <a name="video"></a>
 
