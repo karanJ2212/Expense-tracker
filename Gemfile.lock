@@ -99,8 +99,8 @@ GEM
     diff-lcs (1.5.0)
     erubi (1.12.0)
     ffi (1.15.5)
-    font-awesome-sass (6.4.0)
-      sassc (~> 2.0)
+    font-awesome-sass (5.15.1)
+      sassc (>= 1.11)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.1)
@@ -200,14 +200,14 @@ GEM
     rspec-mocks (3.12.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-rails (6.0.3)
-      actionpack (>= 6.1)
-      activesupport (>= 6.1)
-      railties (>= 6.1)
-      rspec-core (~> 3.12)
-      rspec-expectations (~> 3.12)
-      rspec-mocks (~> 3.12)
-      rspec-support (~> 3.12)
+    rspec-rails (5.1.2)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      rspec-core (~> 3.10)
+      rspec-expectations (~> 3.10)
+      rspec-mocks (~> 3.10)
+      rspec-support (~> 3.10)
     rspec-support (3.12.1)
     rubocop (1.54.2)
       json (~> 2.3)
@@ -285,7 +285,7 @@ DEPENDENCIES
   capybara
   debug
   devise
-  font-awesome-sass (~> 6.4.0)
+  font-awesome-sass (~> 5.15)
   importmap-rails
   jbuilder
   pg
