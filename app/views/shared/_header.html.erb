@@ -2,18 +2,25 @@
   <div class="nav-container header">
     <% case true %>
     <% when current_page?(authenticated_root_path) %>
-      <nav id="mobile-nav-toggle"><i class="fa-solid fa-bars"></i></nav>
+      <nav id="mobile-nav-toggle">
+  <img src="/assets/menu.png" alt="Menu">
+</nav>
       <p>CATEGORY</p>
     <% when current_page?(new_user_category_path) %>
-      <%= link_to raw('<i class="fa-solid fa-arrow-left-long"></i>'), authenticated_root_path %>
+     <%= link_to authenticated_root_path do %>
+  <img src="/assets/leftarrow.png" alt="Left Arrow">
+<% end %>
       <p>NEW CATEGORY</p>
     <% when current_page?(new_user_entity_path) %>
-      <%= link_to raw('<i class="fa-solid fa-arrow-left-long"></i>'), authenticated_root_path %>
+      <%= link_to authenticated_root_path do %>
+  <img src="/assets/leftarrow.png" alt="Left Arrow">
+<% end %>
       <p>NEW TRANSACTION</p>
       <% else %>
-      <%= link_to raw('<i class="fa-solid fa-arrow-left-long"></i>'), authenticated_root_path %>
-      <p>TRANSACTION</p>
+     <%= link_to authenticated_root_path do %>
+  <img src="/assets/leftarrow.png" alt="Left Arrow">
+<% end %>
     <% end %>
-    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+ 
   </div>
 </header>
