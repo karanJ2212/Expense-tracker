@@ -3,7 +3,9 @@
   <header>
     <div class="login-header header">
       <div>
-        <%= link_to raw('<i class="fa-solid fa-arrow-left-long"></i>'), unauthenticated_root_path %>
+         <%= link_to authenticated_root_path do %>
+              <%= image_tag('leftarrow.png') %>
+            <% end %>
         
       </div>
       <p>LOGIN</p>
@@ -19,6 +21,10 @@
 
       <%= f.label :password %>
       <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password"  %>
+
+          <%= button_tag(type: 'submit', class: 'custom-submit-button') do %>
+          Submit
+        <% end %>
     </div>
     
     <div class="forget-password">
