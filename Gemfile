@@ -62,23 +62,17 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-# gem 'sassc-rails'
+gem 'sassc-rails'
 
-# gem 'devise'
-# gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'devise'
+gem 'rubocop', '>= 1.0', '< 2.0'
 
-group :test do
+group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-gem 'rubocop', '>= 1.0', '< 2.0'
-
-gem 'devise'
-
-gem 'font-awesome-sass', '~> 6.4.0'
-
-gem 'sassc'
-
 gem 'cancancan'
+gem 'font-awesome-sass', '~> 6.4.0'
