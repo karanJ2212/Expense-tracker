@@ -1,0 +1,36 @@
+<div class="authentication log-in">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <header>
+    <div class="login-header header">
+      <div>
+         <%= link_to authenticated_root_path do %>
+              <%= image_tag('leftarrow.png') %>
+            <% end %>
+        
+      </div>
+      <p>LOGIN</p>
+      <div class="action">
+        <%= f.submit "Log In" %>
+      </div>
+  </div>
+  </header>
+    
+    <div class="input-container">
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email"  %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password"  %>
+
+          <%= button_tag(type: 'submit', class: 'custom-submit-button') do %>
+          Submit
+        <% end %>
+    </div>
+    
+    <div class="forget-password">
+      <%= link_to  "Forgot password ?", new_user_password_path(current_user)%>
+    </div>
+  <% end %>
+</div>
+
+<%# <%= render "devise/shared/links" %> 

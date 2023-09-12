@@ -1,0 +1,30 @@
+<header class="shared_header">
+  <div class="nav-container header">
+    <% case true %>
+    <% when current_page?(authenticated_root_path) %>
+      <nav id="mobile-nav-toggle">
+
+  <%= image_tag('menu.png') %>
+</nav>
+      <p>CATEGORY</p>
+    <% when current_page?(new_user_category_path) %>
+     <%= link_to authenticated_root_path do %>
+
+  <%= image_tag('leftarrow.png') %>
+<% end %>
+      <p>NEW CATEGORY</p>
+    <% when current_page?(new_user_entity_path) %>
+      <%= link_to authenticated_root_path do %>
+
+   <%= image_tag('leftarrow.png') %>
+<% end %>
+      <p>NEW TRANSACTION</p>
+      <% else %>
+     <%= link_to authenticated_root_path do %>
+
+  <%= image_tag('leftarrow.png') %>
+<% end %>
+    <% end %>
+ 
+  </div>
+</header>
